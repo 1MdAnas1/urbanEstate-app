@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">  
+    <script type="text/javascript" src="newslet.js"></script> 
+    <title>About us - Urban Estate</title>
+    <style>
+.properties-container1{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px,auto));
+    gap: 3rem;
+    padding:0px 50px ;
+
+}
+
+.properties-container1 .box{
+    background: white;
+    padding: 10px;
+    
+    border-radius: 1rem;
+    box-shadow: -3px 1px 10px rgb(110, 110, 110);
+    
+}
+.properties-container1 .box:hover{
+    transform: translateY(-10px);
+    transition: 0.5s;
+    background: #fbeaea;
+    box-shadow: -5px 5px 10px #800000;
+}
+.properties-container1 .box img{
+    border-radius: 1rem;
+    height: 220px;
+    object-fit: cover;
+    object-position: center;
+}
+.properties-container1 .box h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    text-shadow: -1px 1px 0px black;
+}
+.properties-container1 .box h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    float: right;
+    
+}
+.properties-container1 .box .content{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+.properties-container1 .box .content .text h3{
+    font-weight: 500;
+}
+.properties-container1 .box .content .text p{
+    font-size: 0.9rem;
+    
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    
+    <header style="background-color: #090A0A">
+        <div class="nav container">
+            <!-- LOGO -->
+            <a href="index.html" class="logo"><i class='bx bxs-home'></i>Urban Estate</a>
+            <!-- MENU -->
+            <input type="checkbox" name="" id="menu">
+            <label for="menu" <i class='bx bx-menu' id="menu-icon"></i></label>
+            <!-- NAV LIST -->
+         <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#properties">Properties</a>
+            <ul class="dropdown">
+                <li><a href="purchase.html">For Purchase</a> </li>
+                <li><a href="rent.html">For Rent</a></li>
+            </ul>
+            </li>            
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+        
+        </div>
+    </header>
+   <br><br><br><br><br>
+
+   
+    <section class="properties container" id="properties">
+        <div class="heading">            
+            <h2>Who We Are </h2>
+            <p>Urban Estate, the Leader in Real Estate Businness. It provides you with the best homes at the best prices  posssible. <br>
+                We can be the website for your next home.</p><br>
+            <p>We at Urban Estate are there to provide you with the best experience in Real Estate</p>
+        </div>
+        <div class="properties-container1 container">
+            
+            <div class="box">
+                <a href="#">
+                    <img src="img/about1.jpg" alt="">
+                </a>
+                
+                <div class="content">
+                    <div class="text">
+                        <a href="#">
+                            <h3>John Deo</h3>
+                        </a>
+                        <p>CEO & Founder</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+            <div class="box">
+                <a href="#">
+                    <img src="img/about2.jpg" alt="">
+                </a>
+                
+                <div class="content">
+                    <div class="text">
+                        <a href="#">
+                            <h3>Ravi Menon</h3>
+                        </a>
+                        <p>Senior Manager</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+            <div class="box">
+                <a href="#">
+                    <img src="img/about3.jpg" alt="">
+                </a>
+                
+                <div class="content">
+                    <div class="text">
+                        <a href="#">
+                            <h3>Mahira Oberoi</h3>
+                        </a>
+                        <p>Senior Agent</p>
+                    </div>
+                    
+                </div>
+            </div>
+
+           
+        </div>
+    </section>
+
+    </div>
+
+    </section>
+    <section class="newsletter container">
+        <h2>Subscribe to Our Newsletter !!!</h2>
+        <h3>Drop your email address below</h3>
+        <form onsubmit="return validate(this)" action="newsletter.php" method="post">
+            <input type="text" name="emailname" id="emailbox" placeholder="yourname@domain.com">
+            <input type="submit" name="subnews" value="Send" class="btn">
+        </form>
+    </section>
+    
+    
+
+    <!-- Footer -->
+    <section class="footer">
+        <div class="footer-container container">
+            <h2>Urban Estate</h2>
+            <div class="footer-box">
+                <h3>Links</h3>
+                <a href="purchase.html">Purchase</a><br>
+                <a href="rent.html">Rent</a><br>                
+            </div>
+            <div class="footer-box">
+                <h3></h3><br><br>
+                <a href="aboutus.html">About us</a><br>
+                <a href="contactus.html">Contact us</a><br>                
+            </div>
+            <div class="footer-box">
+                <h3>Connect with us</h3>
+                <a href="#">+91 011 2299393</a>
+                <a href="#">urbanestate@gmail.com</a><br><br>
+                <div class="social">
+                    <a href="https://www.instagram.com" id="insta"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="https://www.facebook.com" id="fb"><i class='bx bxl-facebook-circle'></i></a>
+                    <a href="https://www.twitter.com" id="twitter"><i class='bx bxl-twitter'></i></a>            
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <p>&#169; URBANESTATE All Rights Reserved</p>
+    </div>
+</body>
+
+</html>

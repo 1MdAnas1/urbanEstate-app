@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="propsheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <script type="text/javascript" src="newslet.js"></script>
+    <title>Will House - Urban Estate</title>
+    
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <header style="background-color: #090A0A">
+     <div class="nav container">
+         <!-- LOGO -->
+         <a href="index.html" class="logo"><i class='bx bxs-home'></i>Urban Estate</a>
+         <!-- NAV LIST -->
+         <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#prop">Properties</a>
+            <ul class="dropdown">
+                <li><a href="purchase.html">For Purchase</a> </li>
+                <li><a href="rent.html">For Rent</a></li>
+            </ul>
+            </li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+         
+     </div>
+    </header>
+   
+    
+     <div class="hero">
+         <div class="row">
+             <div class="col">
+                 <div class="slider">
+                     <div class="product">
+                         <img src="img/r6.jpg" alt="" onclick="clicky(this)">
+                         <img src="img/in6_1.jpg" alt="" onclick="clicky(this)">
+                         <img src="img/in6_2.jpg" alt="" onclick="clicky(this)">
+                         <img src="img/in6_3.jpg" alt="" onclick="clicky(this)">                         
+                     </div>
+                     <div class="preview">
+                         <img src="img/r6.jpg" alt="" id="bigimage">
+                     </div>
+                 </div>
+             </div>
+             <div class="col">
+                 <div class="content">
+                     <p class="title">Will House</p>
+                     <h2>Will House situated in New York is a please to eyes.It has all the things one needs in a dream home.</h2>
+                     <div class="icon2">
+                        <i class='bx bxs-bed'><span>4</span>&nbsp;&nbsp;</i>
+                        <i class='bx bxs-bath'><span>2</span>&nbsp;&nbsp;</i>
+                        <i class='bx bxs-parking'><span>3&nbsp;&nbsp;</span></i>
+                    </div>
+                    <br>
+                    <h2>Monthly Rent:</h2>
+                     <p class="price">$1,799</p>                   
+                         <input type="button" value="Rent" class="pbtn" onclick="pay()">                     
+                 </div>
+             </div>
+         </div>
+        
+         <section class="properties container" id="properties">
+            <div class="heading">
+                <h2>Other Featured properties</h2>
+                <p>Explore a range of properties<br>at the best price </p>
+            </div>
+            <div class="properties-container container">
+                <!-- property 1 -->
+                <div class="box">
+                    <a href="property1rent.html">
+                        <img src="img/r1.jpg" alt="">
+                    </a>
+                    <h3>$2,499</h3>
+                    <h2>Monthly Rent:</h2>
+                    <div class="content">
+                        <div class="text">
+                            <a href="property1rent.html">
+                                <h3>The Thunder</h3>
+                            </a>
+                            <p>New York</p>
+                        </div>
+                        <div class="icon">
+                            <i class='bx bxs-bed'><span>4</span></i>
+                            <i class='bx bxs-bath'><span>2</span></i>
+                            <i class='bx bxs-parking'><span>3</span></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- property 2 -->
+                <div class="box">
+                    <a href="property2rent.html">
+                        <img src="img/r2.jpg" alt="">
+                    </a>
+                    <h3>$2,999</h3>
+                    <h2>Monthly Rent:</h2>
+                    <div class="content">
+                        <div class="text">
+                            <a href="property2rent.html">
+                                <h3>The Outdoor One</h3>
+                            </a>
+                            <p>London</p>
+                        </div>
+                        <div class="icon">
+                            <i class='bx bxs-bed'><span>4</span></i>
+                            <i class='bx bxs-bath'><span>2</span></i>
+                            <i class='bx bxs-parking'><span>2</span></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- property 3 -->
+                <div class="box">
+                    <a href="property3rent.html">
+                        <img src="img/r3.jpg" alt="">
+                    </a>
+                    <h3>$2,499</h3>
+                    <h2>Monthly Rent:</h2>
+                    <div class="content">
+                        <div class="text">
+                            <a href="property3rent.html">
+                                <h3>Orcha House</h3>
+                            </a>
+                            <p>New York</p>
+                        </div>
+                        <div class="icon">
+                            <i class='bx bxs-bed'><span>4</span></i>
+                            <i class='bx bxs-bath'><span>3</span></i>
+                            <i class='bx bxs-parking'><span>3</span></i>
+                        </div>
+                    </div>
+                </div>
+    
+    
+                <!-- property 4-->
+                <div class="box">
+                    <a href="property4rent.html">
+                        <img src="img/r4.jpg" alt="">
+                    </a>
+                    <h3>$1,899</h3>
+                    <h2>Monthly Rent:</h2>
+                    <div class="content">
+                        <div class="text">
+                            <a href="property4rent.html">
+                                <h3>Pearl Palace</h3>
+                            </a>
+                            <p>California</p>
+                        </div>
+                        <div class="icon">
+                            <i class='bx bxs-bed'><span>4</span></i>
+                            <i class='bx bxs-bath'><span>3</span></i>
+                            <i class='bx bxs-parking'><span>4</span></i>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- property 5 -->
+                <div class="box">
+                    <a href="property5rent.html">
+                        <img src="img/r5.jpg" alt="">
+                    </a>
+                    <h3>$1,849</h3>
+                    <h2>Monthly Rent:</h2>
+                    <div class="content">
+                        <div class="text">
+                            <a href="property5rent.html">
+                                <h3>Nevada's</h3>
+                            </a>
+                            <p>New York</p>
+                        </div>
+                        <div class="icon">
+                            <i class='bx bxs-bed'><span>3</span></i>
+                            <i class='bx bxs-bath'><span>2</span></i>
+                            <i class='bx bxs-parking'><span>3</span></i>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- property 7 -->
+                <div class="box">
+                    <a href="property7rent.html">
+                        <img src="img/r7.jpg" alt="">
+                    </a>
+                    <h3>$1,599</h3>
+                    <h2>Monthly Rent:</h2>
+                    <div class="content">
+                        <div class="text">
+                            <a href="property7rent.html">
+                                <h3>The Roadster</h3>
+                            </a>
+                            <p>London</p>
+                        </div>
+                        <div class="icon">
+                            <i class='bx bxs-bed'><span>3</span></i>
+                            <i class='bx bxs-bath'><span>3</span></i>
+                            <i class='bx bxs-parking'><span>3</span></i>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+    
+        </div>
+    
+        </section>
+
+        <section class="newsletter container">
+            <h2>Subscribe to Our Newsletter !!!</h2>
+            <h3>Drop your email address below</h3>
+            <form onsubmit="return validate(this)" action="newsletter.php" method="post">
+                <input type="text" name="emailname" id="emailbox" placeholder="yourname@domain.com">
+                <input type="submit" name="subnews" value="Send" class="btn">
+            </form>
+        </section>
+
+ <!-- ABOUT -->
+ <section class="about conatiner" id="about">
+    <div class="about-img box">
+        <img src="img/aboutus.jpg" alt="">        
+    </div>
+    <div class="about-text">
+        <span>About Us</span>
+        <h2>The Best <br> at It's best !!!</h2>
+        <p>Urban Estate, the Leader in Real Estate Businness. It provides you with the best homes at the best prices <br> posssible. <br>
+        We can be the website for your next home.</p>
+        <a href="aboutus.html" class="btnl">Learn More</a>
+    </div>
+
+</section>
+
+<!-- Footer -->
+<section class="footer">
+    <div class="footer-container container">
+        <h2>Urban Estate</h2>
+        <div class="footer-box">
+            <h3>Links</h3>
+            <a href="purchase.html">Purchase</a><br>
+            <a href="rent.html">Rent</a><br>
+        </div>
+        <div class="footer-box">
+            <h3></h3><br><br>
+            <a href="aboutus.html">About us</a><br>
+            <a href="contactus.html">Contact us</a><br>                
+        </div>
+        <div class="footer-box">
+            <h3>Connect with us</h3>
+            <a href="#">+91 011 2299393</a>
+            <a href="#">urbanestate@gmail.com</a><br><br>
+            <div class="social">
+                <a href="https://www.instagram.com" id="insta"><i class='bx bxl-instagram-alt'></i></a>
+                <a href="https://www.facebook.com" id="fb"><i class='bx bxl-facebook-circle'></i></a>
+                <a href="https://www.twitter.com" id="twitter"><i class='bx bxl-twitter'></i></a>            
+                
+            </div>
+        </div>
+    </div>
+</section>
+        <!-- Copyright -->
+        <div class="copyright">
+            <p>&#169; URBANESTATE All Rights Reserved</p>
+        </div>
+        
+
+        <script>
+            function clicky(field)
+            {
+                disp=document.getElementById("bigimage");
+                disp.src=field.src
+            }
+            function pay()
+            {
+                window.location.href="paypal.php";
+            }
+        </script>
+</body>
+
+</html>

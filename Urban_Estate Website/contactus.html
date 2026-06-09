@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="propsheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">   
+    <title>Contact us - Urban Estate</title>
+    <script>
+        function validate(form){
+          fail=valname(form.suser.value);
+          fail+=valmail(form.smail.value);
+          fail+=valsubject(form.ssubject.value);
+          fail+=valmessage(form.smessage.value);
+
+          if(fail=="")
+            return true;
+         else
+           { alert(fail);
+            return false;
+           }
+        }
+        function  valname(field){
+                if(field=="") 
+                return "Name can not be empty\n";
+                else 
+                return "";
+        }
+        function valmail(field)
+        {
+            if (field == "")
+               return "No email entered\n"
+            else if ( !(((field.indexOf(".") > 0) && (field.indexOf("@") > 0)) || /[^a-zA-Z0-9.@_-]/.test(field) ))
+               return "E-mail Address INVALID\n"
+    
+               return ""
+        }
+        function valsubject(field)
+        {
+            if(field=="") 
+                return "Subject can not be empty\n";
+                else if(field.length<5)
+                return "Subject must be atleast 5 characters\n";
+                return "";
+        }
+        function valmessage(field)
+        {
+            if(field=="") 
+                return "Message can not be empty\n";        
+                else if(field.length<10)
+                return "Message must be of 10 characters\n";
+                                
+                return "";
+
+                
+        }
+    </script>
+    <style>
+        .login-box2{
+	width: 750px;
+	height: 760px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+    overflow: hidden;
+	transform: translate(-50%, -50%);
+	background: white;
+	padding: 20px 20px;
+	box-shadow: 0 0 20px #000;
+    border-radius: 0.8rem;
+}
+.login-box2 input{
+	width: 250px;
+	height: 60%;
+	border: none;
+	outline: none;
+	background: #eee;
+}
+.login-box2 button{
+	height: 500px;
+	background: #800000;
+	border: none;
+	outline: none;
+	cursor: pointer;
+	color: white;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
+    </style>
+</head>
+<body>
+    <!-- NAVBAR -->
+    <br>
+    <header style="background-color: black;">
+     <div class="nav container">
+         <!-- LOGO -->
+         <a href="index.html" class="logo"><i class='bx bxs-home'></i>Urban Estate</a>
+          <!-- MENU -->
+          <input type="checkbox" name="" id="menu">
+          <label for="menu" <i class='bx bx-menu' id="menu-icon"></i></label>
+          <!-- NAV LIST -->
+       <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#prop">Properties</a>
+          <ul class="dropdown">
+              <li><a href="purchase.html">For Purchase</a> </li>
+              <li><a href="rent.html">For Rent</a></li>
+          </ul>
+          </li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+     </div>
+    </header>
+
+
+
+    <div class="login-container">
+        <div class="login-box2">
+            <form onsubmit="return validate(this)" action="contreport.php" method="post">
+                <h2>Contact Us</h2>
+                <label for="suser">
+                    <input type="text" name="suser" id="suser"  placeholder="Name">
+                </label>
+                
+                <label for="smail">
+                    <input type="text" name="smail" id="smail" placeholder="Your Email">
+                </label>
+                
+                <label for="ssubject">
+                    <input type="text" name="ssubject" id="ssubject"  placeholder="Subject">
+                </label>
+                
+                <label for="smessage">
+                    
+                    <textarea name="smessage" id="smessage" cols="80" rows="2" placeholder="Message"></textarea>
+                </label> 
+                <br><br>               
+                <button type="submit" id="subid" name="subname" class="btn"> Submit</button>
+                <p> OR <br><br>Phone : <a href="signup.html" class="next-log"> <a href="#">+91 011 2299393</a><br>
+                    Email : <a href="#">urbanestate@gmail.com</a> </a>          
+                 
+                
+                
+            </form>
+        </div>
+    </div>
+</body>
+</html>

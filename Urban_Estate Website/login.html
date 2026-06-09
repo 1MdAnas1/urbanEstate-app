@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="loginstyle.css">
+    <link rel="stylesheet" href="propsheet.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <title>Login - Urban Estate</title>
+    <style>
+        .login{
+            font-size: 30px;
+        }
+    </style>
+    <script>
+   function validate(form){
+          fail=valname(form.userid.value);          
+          fail+=valpass(form.passid.value);          
+
+          if(fail=="")
+            return true;
+         else
+           { alert(fail);
+            return false;
+           }
+        }
+        function  valname(field){
+                if(field=="") 
+                return "Username can not be empty\n";
+                else 
+                return "";
+        }
+        function valpass(field)
+        {
+            if(field=="") 
+                return "Password can not be empty\n";
+                else if(field.length<8)
+                return "Password consist atleast 8 characters\n";
+                return "";
+        }   
+    </script>
+
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <br>
+    <header style="background-color: black;">
+     <div class="nav container">
+         <!-- LOGO -->
+         <a href="index.html" class="logo"><i class='bx bxs-home'></i>Urban Estate</a>
+          <!-- MENU -->
+          <input type="checkbox" name="" id="menu">
+          <label for="menu" <i class='bx bx-menu' id="menu-icon"></i></label>
+          <!-- NAV LIST -->
+       <ul class="navbar">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#prop">Properties</a>
+          <ul class="dropdown">
+              <li><a href="purchase.html">For Purchase</a> </li>
+              <li><a href="rent.html">For Rent</a></li>
+          </ul>
+          </li>
+          <li><a href="aboutus.html">About Us</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+      </ul>
+     </div>
+    </header>
+   <br><br><br><br>
+ 
+    <div class="login-container">
+	    <div class="login-box">
+			<form  onsubmit="return validate(this)" action="login.php" method="post">
+				<h2> Login </h2>
+				<label for="userid">
+					<input type="text" id="userid" name="username" placeholder="Your Username">
+				</label>
+				
+				<label for="passid">
+					<input type="password" name="passname" id="passid" placeholder="Your Password">
+				</label>
+				
+				<button type="submit" id="subid" name="subname" class="btn">Login </button>		
+				<br><br>
+				<p> New to Urban Estate? <br><br> <a href="signup.html" class="next-log"> Register Now  </a>
+				
+			</form>
+		</div>				
+	</div>
+
+
+</body>
+
+</html>
